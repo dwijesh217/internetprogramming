@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+<head>
+<title>Library Management System</title>
+<link rel="stylesheet" href="mystyle.css">
+</head>
+<body>
+<header id="top">
+<nav>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#register">Register</a></li>
+<li><a href="#login">login</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</header>
+<main>
+<section id="home">
+<div class="Container">
+<div class="box">
+<center>
+<h2>ENTER user Information</h2>
+</center><br><br>
+<form action="Register.php" method="post" onsubmit="return validate_form()">
+Name:<input type="text" name="stu_name" id="stu_name" required placeholder="Type Your name here" />
+<br><span id="name_error" style="color:red"></span>
+<br>
+username: <input type ="text" name="uname" id="uname" required><br><br>
+password:<input type="password" name="pass" id="pass" required><br><br>
+retype password:<input type="password" name="repass" id="repass" required><br><br>
+<span id="pass_error" style="color:red"></span><br>
+gender:<input type="radio" name="gender" value="male">Male
+<input type="radio" name= "gender" value="female">female
+<br><br>
+department:
+<select name="depart">
+<option value="cse">CSE</option>
+<option value="ece">ECE</option>
+<option value="it">IT</option>
+<option value="eee">EEE</option>
+<option value="mech">MECH</option>
+</select><br><br>
+year:
+<select name="year">
+<option selected>select year of study</option>
+<option value="first">FIRST</option>
+<option value="second">SECOND</option>
+<option value="third">THIRD</option>
+<option value="fourth">FOURTH</option>
+</select><br><br>
+<center>
+<input type="submit" value="Submit"></center>
+</form>
+<script src="myscript.js"></script>
+</div>
+</div>
+<br><br>
+</section>
+<section id="login">
+<div class="container">
+<div class="box">
+<center>
+<h2>enter login</h2>
+</center><br><br>
+<form action="Login.php" method="post">
+username:<input type="text" name="louname" id="louname" required><br><br>
+password:<input type="text" name="lopass" id="lopass" required><br><br>
+<input type="submit" value="login">
+</form>
+</div>
+<br><br>
+</section>
+<section id="contact">
+<div class="container">
+<h1>contact</h1>
+<ul>
+<center><h3><a href ="top">goto top</a></h3></center>
+</div>
+<br><br>
+</section>
+</main>
+<footer>
+<p>@ Copyright 2023 Saveetha School Of Engineering</p>
+</footer>
+</body>
+</html>
+
+
+
+
+  
